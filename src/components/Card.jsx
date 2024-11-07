@@ -1,6 +1,10 @@
-const Card = () => {
+const Card = ({ name, lastName, number }) => {
   return (
-    <div>Hola, soy una tarjeta.</div>
+    <div className="card">
+      <span>{name}</span>
+      <span>{lastName}</span>
+      <span>{number}</span>
+    </div>
   )
 }
 
